@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>阿铄</title>
+<style type="text/css">
+body{
+perspective: 2000px;
+background: black;
+}
+.wrap{
+transform-style: preserve-3d;
+width: 300px;height: 300px;
+margin: 180px auto;
+position: relative;
+animation: move 42s infinite ;
+}
+.wrap div{
+width: 300px;
+height: 300px;
+position: absolute;
+opacity: ;
+}
+.wrap div:nth-child(1){
+transform: translateZ(-150px);
+}
+.wrap div:nth-child(2){
+transform: translateZ(150px);
+}
+.wrap div:nth-child(3){
+transform: rotateX(90deg) translateZ(150px);
+}
+.wrap div:nth-child(4){
+transform: rotateX(90deg) translateZ(-150px);
+}
+.wrap div:nth-child(5){
+transform: rotateY(90deg) translateZ(150px);
+}
+.wrap div:nth-child(6){
+transform: rotateY(90deg) translateZ(-150px);
+}
+
+@keyframes move{
+0%{transform: rotateY(0) rotateX(0);}
+
+50%{transform: rotateY(720deg) rotateX(625deg);}
+
+
+}
+div img{
+width: 100%;
+height: 100%;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="div1"><img src="Images/lxs1.jpg"/></div>
+<div class="div2"><img src="Images/lxs2.jpg"/></div>
+<div class="div3"><img src="Images/lxs3.jpg"/></div>
+<div class="div4"><img src="Images/lxs4.jpg"/></div>
+<div class="div5"><img src="Images/lxs5.jpg"/></div>
+<div class="div6"><img src="Images/lxs6.jpg"/></div>
+</div>
+</body>
+</html>
